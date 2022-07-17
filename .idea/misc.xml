@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BuildAttributionWarningsFilter">
+    <option name="noGCSettingWarning" value="true" />
+  </component>
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
@@ -9,7 +12,16 @@
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/drawable/shape_numero_selecionado.xml" value="0.1295" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/drawable/shape_operador_normal.xml" value="0.1295" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/drawable/shape_operador_selecionado.xml" value="0.1" />
-        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/activity_historico.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/activity_swipe_left.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/activity_swipe_right.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/fragment_calculadora.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/fragment_menu.xml" value="0.171225937183384" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/historico_fragment_listar.xml" value="0.15625" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/historico_fragment_main.xml" value="0.171225937183384" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/historico_item_list_view.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Calculadora/app/src/main/res/layout/menu.xml" value="0.171225937183384" />
       </map>
     </option>
   </component>
