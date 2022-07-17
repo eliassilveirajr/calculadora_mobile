@@ -2,6 +2,7 @@ package ads.prog_mobile.calculadora;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -14,9 +15,6 @@ import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
 import ads.prog_mobile.calculadora.database.DatabaseHelper;
-import ads.prog_mobile.calculadora.historico.Historico;
-import ads.prog_mobile.calculadora.historico.ListarFragment;
-import ads.prog_mobile.calculadora.historico.MainFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -105,14 +103,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     double resultado = expressao.evaluate();
                     long longResult = (long) resultado;
 
-                    // DatabaseHelper databaseHelper = new DatabaseHelper(Historico);
+
+                    //DatabaseHelper databaseHelper = new DatabaseHelper(getActivity());
                     Historico h = new Historico();
 
                     if (resultado == (double)longResult){
                         tv_resultado.setText((CharSequence) String.valueOf(longResult));
-
+                        h.setOperacao(tv_expressao.getText().toString());
+                        h.setResultado(tv_resultado.getText().toString());
+                        //databaseHelper.createHistorico(h);
                     }else{
                         tv_resultado.setText((CharSequence) String.valueOf(resultado));
+                        h.setOperacao(tv_expressao.getText().toString());
+                        h.setResultado(tv_resultado.getText().toString());
+                        //databaseHelper.createHistorico(h);
                     }
                 }catch (Exception e){
                     tv_resultado.setText("Operação");

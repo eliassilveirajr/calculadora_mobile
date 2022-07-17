@@ -1,4 +1,4 @@
-package ads.prog_mobile.calculadora.historico;
+package ads.prog_mobile.calculadora;
 
 public class Historico {
     private int id;

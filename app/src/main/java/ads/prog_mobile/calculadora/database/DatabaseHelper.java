@@ -9,7 +9,7 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 import ads.prog_mobile.calculadora.R;
-import ads.prog_mobile.calculadora.historico.Historico;
+import ads.prog_mobile.calculadora.Historico;
 
 
 public class DatabaseHelper extends SQLiteOpenHelper {
@@ -79,7 +79,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         String[] columns = {"_id", "operacao", "resultado"};
         Cursor data = db.query(TABLE_HISTORICO, columns, null, null,
-                null, null, "id DESC");
+                null, null, "id");
         int[] to = {R.id.textViewIdListHistorico, R.id.textViewOperacaoListHistorico, R.id.textViewResultadoListHistorico};
 
         SimpleCursorAdapter simpleCursorAdapter = new SimpleCursorAdapter(context,
